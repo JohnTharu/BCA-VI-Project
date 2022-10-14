@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Oswald', sans-serif;
+        }
+        body{
+            width: 100%;
+        }
+        #header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1px 80px;
+        }
+        #header img{
+            width: 180px;
+            height: 50px;
+            padding: 0 20px;
+        }
+        #navbar{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #navbar li{
+        list-style: none;
+        padding: 0 20px;
+        position: relative;
+         }
+         #navbar li a{
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 600px;
+        color: #1a1a1a;
+        transition: 0.3s ease;
+        }
+        #navbar li a:hover,
+        #navbar li a.active
+        {
+            color: orange;
+        }
+        #navbar li a.active::after,
+        #navbar li a:hover::after
+        {
+            content: "";
+            width: 30%;
+            height: 2px;
+            background-color: #088178;
+            position: absolute;
+            bottom: -4px;
+            left: 20px;
+        }
+        button{
+            padding: 5px 20px 5px 20px;
+            background-color: red;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: orange;
+            color: black;
+        }
+        #parent{
+            width: 100%;
+            height: 80vh;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .child{
+            height: 600px;
+            flex: 1 1 200px;
+            margin: 5px;
+        }
+        .child:first-child{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        .pic2 img{
+            width: 60%;
+            height: auto;
+        }
+        .para{
+            text-align: left;
+            margin: 0px 30px 0px 60px;
+        }
+        .para h4{
+            font-size: 2rem;
+        }
+        .para p{
+            padding: 0px 10px 0px 20px;
+            text-align: justify;
+        }
+        .b{
+            color: rgb(84, 84, 224);
+        }
+        .db{
+            color: rgb(98, 98, 224);
+        }
+        .head{
+            width: 60%;
+           border: 1px solid red;
+            height: 400px;
+            box-shadow: 10px 10px 5px #aaaaaa;
+            margin: 10% 10% 0 10%;
+            text-align: center;
+        }
+        form{
+            text-align: left;
+            margin-left: 70px;
+        }
+        h1{
+            font-size: 3rem;
+            padding: 30px;
+            margin-top: 10px;
+        }
+        label{
+            font-size: 1rem;
+            padding: 10px;
+        }
+        input{
+            width: 250px;
+            height: 30px;
+            outline: none;
+            padding: 0 10px;
+            border-radius: 5px;
+        }
+        
+    </style>
+</head>
+<body>
+    <section id="header">
+        <a href=""><img src="img/logo.png" class="logo" alt=""></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a href="Home.html">Home</a></li>
+                <li><a class="active" href="Category.html">Category</a></li>
+                <li><a href="Item.html">Item</a></li>
+                <li><a href="Personal.html">Personal Details</a></li>
+                <li><button>Log Out</button></li>
+            </ul>
+        </div>
+    </section>
+    <section id="parent">
+        <div class="child">
+            <div class="pic2">
+                <img src="img/Online wishes list-bro.png" alt="Online List">
+            </div>
+            <div class="para">
+                <h4><span class="b">C</span>ategory <span class="db">S</span>ection</h4>
+                <p>Separate items are grouped into categories according to shared characteristics. Depending on the subject, you may be asked to classify people, organisms, things, or ideas. Topic sentence identifies what is to be classified and the categories used. From here provide us what type of category you want.</p>
+            </div>
+        </div>
+        <div class="child">
+            <div class="head">
+                <h1>Add Category</h1>
+                <form action="" method="get">
+                    <label for="">Product ID</label><br>
+                    <input type="text"><br><br>
+                    <label for="">Category</label><br>
+                    <input type="text"><br><br>
+                    <button>Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

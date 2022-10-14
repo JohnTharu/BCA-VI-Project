@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Form</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            width: 100%;
+        }
+        form{
+            width: 500px;
+            height: 500px;
+            margin: 2% 0 0 20%;
+            background-color: aquamarine;
+        }
+        .childs,.childss{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            width: 100%;
+        }
+        .first,.second,.third,.fourth,.sixth,.seventh{
+            width: 45%;
+            margin: 10px;
+        }
+        h1{
+            width: 100%;
+            text-align: center;
+            padding: 20px;
+        }
+        h4{
+            font-size: 18px;
+            padding: 0 0 0 15px;
+        }
+        input{
+            margin: 5px 0 0 15px;
+            padding: 5px;
+            outline: none;
+            border-radius: 5px;
+        }
+        .child:last-child{
+            display: flex;
+            justify-content: space-around;
+        }
+        input[type="button"]{
+            border: none;
+            width: 80px;
+            height: 40px;
+            color: white;
+        }
+        .btn-add{
+            background-color: #28a745;
+        }
+        .btn-update{
+            background-color: #007bff;
+        }
+        .btn-delete{
+            background-color: #dc3545;
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="get">
+        <h1>Add Items</h1>
+        <div class="childs">
+            <div class="first">
+                <h4>Category</h4>
+                <input type="text">
+            </div>
+            <div class="second">
+                <h4>Product Name</h4>
+                <input type="text">
+            </div>
+        </div>
+        <div class="childs">
+            <div class="third">
+                <h4>Price</h4>
+                <input type="text">
+            </div>
+            <div class="fourth">
+                <h4>Description</h4>
+                <input type="text">
+            </div>
+        </div>
+        <div class="childs">
+            <div class="sixth">
+                <h4>Upload Photo</h4>
+                <input type="file" name="" id="">
+            </div>
+            <div class="seventh">
+
+            </div>
+        </div>
+        <div class="childs">
+            <div class="eight">
+                <input type="button" class="btn-add" value="Add">
+                <input type="button" class="btn-update" value="Update">
+                <input type="button" class="btn-delete" value="Delete">
+            </div>
+        </div>
+    </form>
+</body>
+</html>

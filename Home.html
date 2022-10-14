@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Oswald', sans-serif;
+        }
+        body{
+            width: 100%;
+        }
+        #header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1px 80px;
+        }
+        #header img{
+            width: 180px;
+            height: 50px;
+            padding: 0 20px;
+        }
+        #navbar{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #navbar li{
+        list-style: none;
+        padding: 0 20px;
+        position: relative;
+         }
+         #navbar li a{
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 600px;
+        color: #1a1a1a;
+        transition: 0.3s ease;
+        }
+        #navbar li a:hover,
+        #navbar li a.active
+        {
+            color: orange;
+        }
+        #navbar li a.active::after,
+        #navbar li a:hover::after
+        {
+            content: "";
+            width: 30%;
+            height: 2px;
+            background-color: #088178;
+            position: absolute;
+            bottom: -4px;
+            left: 20px;
+        }
+        button{
+            padding: 5px 20px 5px 20px;
+            background-color: red;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: orange;
+            color: black;
+        }
+        #parent{
+            width: 100%;
+            height: 80vh;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .child{
+            height: 600px;
+            flex: 1 1 200px;
+            margin: 5px;
+        }
+        .info{
+            margin: 140px 0px 0px 40px;
+        }
+        .info h1{
+            font-size: 5rem;
+        }
+        .info h4{
+            font-size: 2.5rem;
+        }
+        .info p{
+            font-size: 1.5rem;
+        }
+        .r{
+            font-size: 5.5rem;
+            color: rgb(177, 22, 22);
+        }
+        .g{
+            color: rgb(87, 182, 87);
+        }
+        .o{
+            color: rgb(218, 157, 44);
+        }
+        .child img{
+            width: 85%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <section id="header">
+        <a href=""><img src="img/logo.png" class="logo" alt=""></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="Home.html">Home</a></li>
+                <li><a href="Category.html">Category</a></li>
+                <li><a href="Item.html">Item</a></li>
+                <li><a href="Personal.html">Personal Details</a></li>
+                <li><button>Log Out</button></li>
+            </ul>
+        </div>
+    </section>
+    <section id="parent">
+        <div class="child">
+            <div class="info">
+                <h1><span class="r">I</span>nformation <span class="r">S</span>ystem</h1>
+                <h4><span class="g">G</span>ive Us Your <span class="g">B</span>usiness Info</h4>
+                <p><span class="o">W</span>e Give You a <span class="o">W</span>ebsite.</p>
+            </div>
+        </div>
+        <div class="child">
+            <img src="img/Audit-pana.png" class="logo" alt="">
+        </div>
+    </section>
+</body>
+</html>
